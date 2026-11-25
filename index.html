@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond the Notes — The Art of Jazz</title>
+  
+  <!-- Importamos las fuentes tipográficas desde Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Enlace a nuestra hoja de estilos mediante ruta relativa -->
+  <link rel="stylesheet" href="miestilo.css">
+</head>
+<body>
+ 
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#inicio" class="logo">Beyond the Notes</a>
+      
+      <!-- Botón hamburguesa para celulares (accesible con aria-expanded) -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        &#9776;
+      </button>
+ 
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#estilos">Estilos</a></li>
+          <li><a href="#artistas">Artistas</a></li>
+          <li><a href="#discografia">Discografía</a></li>
+          <li><a href="#explora">Explora</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <main>
+    <!-- SECCIÓN 1: INICIO (HERO) -->
+    <section id="inicio" class="hero">
+      <div class="hero-overlay"></div>
+      <img src="img/hero-jazz.jpg" alt="Músicos de jazz tocando instrumentos de viento en blanco y negro" class="hero-bg">
+      
+      <div class="container hero-content">
+        <span class="eyebrow">Edición Especial &bull; Cultura Musical</span>
+        <h1>Beyond the Notes</h1>
+        <p class="subtitle">The Art of Jazz</p>
+        <blockquote class="hero-quote">
+          «El jazz no es solo música. Es una forma de sentir, crear y expresar libertad».
+        </blockquote>
+        <a href="#historia" class="btn-primary">Descubre el jazz</a>
+      </div>
+    </section>
+ 
+    <!-- SECCIÓN 2: HISTORIA DEL JAZZ (FONDO CREMA EDITORIAL) -->
+    <section id="historia" class="section-cream">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">01 / Orígenes</span>
+          <h2>Historia del Jazz</h2>
+          <div class="divider"></div>
+        </header>
+ 
+        <div class="history-intro">
+          <p>
+            El jazz nació a finales del siglo XIX y principios del XX en las comunidades afroamericanas de <strong>Nueva Orleans, Luisiana</strong>. Esta ciudad portuaria fue un crisol cultural donde se fusionaron los ritmos sincopados de África Occidental, el <em>blues</em>, el <em>ragtime</em> y la tradición de las bandas de metales europeas.
+          </p>
+          <p>
+            A diferencia de la música clásica escrita, el jazz puso en el centro la <strong>improvisación</strong>: la capacidad de los músicos para dialogar con sus instrumentos y crear melodías únicas en tiempo real.
+          </p>
+        </div>
+ 
+        <!-- Línea del tiempo -->
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-year">1900 – 1920</span>
+            <h3>Nueva Orleans y el Jazz Tradicional</h3>
+            <p>Las bandas callejeras y los clubes de Storyville dan forma a la improvisación colectiva. Surgen figuras pioneras como Buddy Bolden y Jelly Roll Morton.</p>
+          </article>
+ 
+          <article class="timeline-item">
+            <span class="timeline-year">1930 – 1940</span>
+            <h3>La Era del Swing y las Big Bands</h3>
+            <p>El jazz se convierte en la música popular de baile en Estados Unidos gracias a grandes orquestas lideradas por Duke Ellington y Count Basie.</p>
+          </article>
+ 
+          <article class="timeline-item">
+            <span class="timeline-year">1940 – 1950</span>
+            <h3>La Revolución del Bebop</h3>
+            <p>Charlie Parker y Dizzy Gillespie transforman el jazz en música de escucha: tiempos vertiginosos, armonías complejas y virtuosismo individual.</p>
+          </article>
+ 
+          <article class="timeline-item">
+            <span class="timeline-year">1950 – 1960</span>
+            <h3>Cool Jazz, Hard Bop y Jazz Modal</h3>
+            <p>El género se diversifica entre la serenidad melódica de la Costa Oeste y la intensidad rítmica de Nueva York, culminando en obras maestras como <em>Kind of Blue</em>.</p>
+          </article>
+ 
+          <article class="timeline-item">
+            <span class="timeline-year">1970 – Actualidad</span>
+            <h3>Fusión y Vanguardia Global</h3>
+            <p>El jazz incorpora sintetizadores, ritmos de rock, funk, música latina y hip-hop, manteniéndose como un lenguaje vivo en todo el mundo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- SECCIÓN 3: ESTILOS MUSICALES (TARJETAS DESPLEGABLES) -->
+    <section id="estilos" class="section-dark">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">02 / Subgéneros</span>
+          <h2>Estilos Musicales</h2>
+          <p class="section-desc">Haz clic en cada estilo para desplegar sus características principales.</p>
+          <div class="divider"></div>
+        </header>
+ 
+        <div class="accordion-grid">
+          <!-- Tarjeta 1: Swing -->
+          <article class="accordion-card">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Swing</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-body">
+              <p><strong>Descripción:</strong> Estilo bailable y enérgico que dominó las salas de baile durante las décadas de 1930 y 1940.</p>
+              <p><strong>Características:</strong> Uso de grandes orquestas (Big Bands), secciones de metales y maderas bien definidas, y un pulso rítmico que invita al movimiento.</p>
+              <p><strong>Artista representativo:</strong> Duke Ellington / Benny Goodman.</p>
+            </div>
+          </article>
+ 
+          <!-- Tarjeta 2: Bebop -->
+          <article class="accordion-card">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Bebop</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-body">
+              <p><strong>Descripción:</strong> Movimiento moderno nacido en los clubes nocturnos de Nueva York que convirtió al jazz en un arte intelectual.</p>
+              <p><strong>Características:</strong> Cuartetos o quintetos pequeños, tempos muy rápidos, cambios de acordes complejos e improvisaciones virtuosas.</p>
+              <p><strong>Artista representativo:</strong> Charlie Parker / Dizzy Gillespie.</p>
+            </div>
+          </article>
+ 
+          <!-- Tarjeta 3: Cool Jazz -->
+          <article class="accordion-card">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Cool Jazz</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-body">
+              <p><strong>Descripción:</strong> Una respuesta relajada, lírica e introspectiva frente a la intensidad frenética del bebop.</p>
+              <p><strong>Características:</strong> Tonos suaves, arreglos cuidados, menor vibrato en los vientos y una atmósfera elegante y melancólica.</p>
+              <p><strong>Artista representativo:</strong> Chet Baker / Miles Davis (etapa <em>Birth of the Cool</em>).</p>
+            </div>
+          </article>
+ 
+          <!-- Tarjeta 4: Hard Bop -->
+          <article class="accordion-card">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Hard Bop</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-body">
+              <p><strong>Descripción:</strong> Extensión del bebop surgida a mediados de los años 50 que reconectó el jazz con sus raíces afroamericanas.</p>
+              <p><strong>Características:</strong> Fuerte influencia del blues, el gospel y el rhythm & blues, con ritmos contundentes y melodías expresivas.</p>
+              <p><strong>Artista representativo:</strong> Art Blakey & The Jazz Messengers / Horace Silver.</p>
+            </div>
+          </article>
+ 
+          <!-- Tarjeta 5: Modal Jazz -->
+          <article class="accordion-card">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Modal Jazz</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-body">
+              <p><strong>Descripción:</strong> Enfoque revolucionario de finales de los 50 que liberó a los músicos de las progresiones rápidas de acordes.</p>
+              <p><strong>Características:</strong> Improvisación basada en escalas musicales (modos) sostenidas durante varios compases, creando espacio y profundidad.</p>
+              <p><strong>Artista representativo:</strong> Miles Davis / John Coltrane.</p>
+            </div>
+          </article>
+ 
+          <!-- Tarjeta 6: Jazz Fusion -->
+          <article class="accordion-card">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Jazz Fusion</span>
+              <span class="accordion-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion-body">
+              <p><strong>Descripción:</strong> Híbrido nacido a finales de los 60 que mezcló la improvisación del jazz con la potencia del rock y el funk.</p>
+              <p><strong>Características:</strong> Incorporación de guitarras eléctricas, bajos eléctricos, sintetizadores y patrones rítmicos cercanos al rock y al soul.</p>
+              <p><strong>Artista representativo:</strong> Herbie Hancock / Weather Report.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- SECCIÓN 4: GRANDES ARTISTAS -->
+    <section id="artistas" class="section-cream">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">03 / Leyendas</span>
+          <h2>Grandes Artistas</h2>
+          <div class="divider"></div>
+        </header>
+ 
+        <div class="artists-grid">
+          <!-- Artista 1 -->
+          <article class="artist-card">
+            <div class="artist-img-wrapper">
+              <img src="img/louis-armstrong.jpg" alt="Retrato en blanco y negro de Louis Armstrong tocando la trompeta">
+            </div>
+            <div class="artist-info">
+              <h3>Louis Armstrong</h3>
+              <span class="artist-role">Trompeta y Voz (1901–1971)</span>
+              <p>Conocido como «Satchmo», revolucionó el jazz al transformar la improvisación solista y popularizar el canto <em>scat</em> con su inconfundible voz grave.</p>
+            </div
+ 
